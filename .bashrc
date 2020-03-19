@@ -31,4 +31,6 @@ alias i3config="vim ~/.config/i3/config"
 # Pacman
 alias pacup='sudo pacman -Syu'
 alias pacin='sudo pacman -S'
+
+# dotfiles sync with github
 alias config='/usr/bin/git --git-dir=/home/cid/.cfg/ --work-tree=/home/cid'
