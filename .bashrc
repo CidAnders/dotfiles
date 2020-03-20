@@ -12,6 +12,8 @@ export RTV_BROWSER='w3m'
 
 xset r rate 300 30
 
+setxkbmap -option ctrl:swapcaps
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -27,6 +29,9 @@ alias la='ls -la'
 alias ll='ls -l'
 alias mon='sudo bmon'
 alias i3config="vim ~/.config/i3/config"
+alias uuid="ls -l /dev/disk/by-uuid"
+alias mount='udisksctl mount -b'
+alias unmount='udisksctl unmount -b'
 
 # Pacman
 alias pacup='sudo pacman -Syu'
